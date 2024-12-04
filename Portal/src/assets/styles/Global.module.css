@@ -1,0 +1,11 @@
+:root{
+    --lightPink: #3d5a80;
+    --lavender: #98c1d9;
+    --purple: #ee6c4d;
+    --blue: #293241;
+    --fontHeading: 'Philosopher', sans-serif;
+    
+}
+body{
+    background-image: linear-gradient(to right, var(--blue), var(--lightPink));
+}
