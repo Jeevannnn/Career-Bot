@@ -1,6 +1,5 @@
 import HeaderCSS from "../assets/styles/Header.module.css"
 import { Link} from "react-router-dom"
-import { handleModelChange,resetCount,ErrorMsg } from "../features/offerCounselling/offerCounsellingSlice"
 import { setNotificationData } from "../features/header/headerSlice"
 import { useDispatch,useSelector } from "react-redux"
 import React from "react"

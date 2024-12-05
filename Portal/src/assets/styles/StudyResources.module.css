@@ -1,0 +1,49 @@
+.studySection {
+    background: linear-gradient(to right, #293241, #3d5a80); /* Left-to-right gradient */
+    padding: 60px 20px;
+    text-align: center;
+    color: #3d5a80; /* Ensure text in this section contrasts with the dark gradient */
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #e0fbfc; /* Box background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 40px; /* Inner padding for the content */
+    color: #333; /* Text color inside the container */
+}
+
+.studySection h2 {
+    font-size: 2.5em;
+    color: #293241 !important; /* Use important to override conflicting styles */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666; /* Slightly muted text for readability */
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+a:hover {
+    text-decoration: underline;
+}

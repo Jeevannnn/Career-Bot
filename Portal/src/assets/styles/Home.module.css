@@ -5,7 +5,7 @@
     border-radius: 100%;
     border: none;
     box-shadow: 2px 4px 4px var(--purple);
-    background-color: rgba(14, 17, 23, 1);
+    background-color: #2b3647;
     animation: danceButton 1s infinite alternate;
     padding: 5px;
     text-align: center;

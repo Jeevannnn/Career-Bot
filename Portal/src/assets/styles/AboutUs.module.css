@@ -1,46 +1,48 @@
-.aboutContainer{
+/* General Container */
+.aboutContainer {
     width: 80%;
     margin: auto;
     font-family: var(--fontHeading);
     background-color: white;
     border-radius: 8px;
-    box-shadow:  4px 5px 10px var(--blue);
+    box-shadow: 4px 5px 10px var(--blue);
+    color: #333; /* Ensure readable text against a white background */
 }
 
-.aboutContainer .missionheading{
+.aboutContainer .missionheading {
     font-size: 2.2em;
     margin-bottom: 5px;
     color: var(--blue);
-    text-shadow:  1px 1px 2px violet;
+    text-shadow: 1px 1px 2px violet;
 }
 
-.aboutContainer .missionDescription{
+.aboutContainer .missionDescription {
     font-size: 18px;
+    color: #555; /* Softer contrast for paragraph text */
 }
 
-
-.missionImage{
-    max-width: 100%;   
+.missionImage {
+    max-width: 100%;
 }
 
-.headingDiv{
+.headingDiv {
     position: relative;
     margin-bottom: 30px;
 }
 
-.headingDiv::after{
+.headingDiv::after {
     content: ''; 
     position: absolute;
     bottom: 0; 
     left: 50%; 
     width: 50%; 
-    border-bottom: 2px solid white; 
+    border-bottom: 2px solid var(--blue); /* Match blue theme */
     transform: translateX(-50%);
 }
 
-.headingDiv .mainHeading{
-    color: white;
-    text-shadow: 5px 5px 5px var(--blue);
+.headingDiv .mainHeading {
+    color: #ffff; /* Ensure visibility */
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for emphasis */
     font-family: var(--fontHeading);
     text-align: center;
     padding: 20px;
@@ -48,49 +50,41 @@
 }
 
 /* Team Cards */
-
-
 .cardsContainer {
-   width: 80%;
-   margin-bottom: 30px auto;
-   font-family: var(--fontHeading);
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-   gap:30px;
-}
-
-.cardsContainer .teamCards {
+    width: 70%;
+    margin: 20px ;
+    font-family: var(--fontHeading);
     display: flex;
     justify-content: center;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 30px;
+    
 }
 
-.team {
-    width: 300px;
+.teamCards .team {
+    width: 200px;
     height: 300px;
     transform-style: preserve-3d;
     perspective: 500px;
-    border: none;
+    border: 0px 0px 3px 3px;
     background-color: inherit;
-    margin: 10px;
+    margin: 50px;
 }
 
 .team .face {
     position: absolute;
-    color: white;
+    color: #333; /* Adjust to contrast better against the background */
     width: 100%;
     height: 100%;
     overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px #2a3545;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.06);
     transform-style: preserve-3d;
     transition: 0.5s;
     backface-visibility: hidden;
-    border-top: 1px solid #ddd;
-    border-left: 1px solid #ddd;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
 }
 
 .team .frontFace,
@@ -113,11 +107,12 @@
     letter-spacing: 2px;
     font-size: 1rem;
     font-weight: bold;
+    color: #444; /* Clear visibility */
 }
 
 .designation {
     font-size: 0.9rem;
-    color: white;
+    color: #666; /* Softer contrast */
     letter-spacing: 0.8px;
 }
 
@@ -126,82 +121,41 @@
 }
 
 .team .backFace {
-    position: absolute;
     background: rgba(255, 255, 255, 0.06);
     transform: rotateY(180deg);
     padding: 20px 30px;
     text-align: center;
     user-select: none;
-}
-
-.iconsLeft{
-    position: absolute;
-    top: 13px;
-    left: 18px;
-    font-size: 1.2rem;
-}
-
-
-.iconsRight {
-    position: absolute;
-    bottom: 25px;
-    right: 18px;
-    font-size: 1.2rem;
+    color: #333; /* Ensure readability */
 }
 
 .team:hover .backFace {
     transform: rotateY(360deg);
 }
 
-.socialIcons{
+/* Social Icons */
+.socialIcons {
     font-size: 25px;
     margin-top: 5px;
 }
 
-.socialIcons a{
+.socialIcons a {
     text-decoration: none;
-    color: white;
+    color: #333; /* Default color for links */
     margin-right: 12px;
 }
 
-.linkedIn:hover{
+.linkedIn:hover {
     color: var(--blue);
 }
 
-.gitHub:hover{
+.gitHub:hover {
     color: var(--blue);
 }
 
-/* Contact */
-
-.contactContainer{
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin: auto;
-    font-family: var(--fontHeading);
-    color: white;
-}
-
-.icons{
-    padding-inline: 20px;
-    margin-bottom: 30px;
-}
-
-.icons img{
-    max-width: 60px;
-    border-radius: 90%;
-    border: 1px solid white;
-}
-
-
-.icons img:hover{
-    transform: scale(1.2);
-}
-
+/* Media Query Adjustments */
 @media screen and (max-width: 992px) {
-
-    .aboutContainer{
+    .aboutContainer {
         width: 90%;
     }
 
@@ -210,7 +164,7 @@
         margin-bottom: 20px;
     }
 
-    .contactContainer{
+    .contactContainer {
         flex-wrap: wrap;
     }
 }

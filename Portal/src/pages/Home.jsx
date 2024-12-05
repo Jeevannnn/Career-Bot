@@ -14,7 +14,7 @@ export default function Home(){
         <Reviews/>
         <Link 
           className={HomeCSS.openButton}
-          to="http://localhost:8501"
+          to="https://studious-fortnight-pv56w5q9gw5frrq9-8501.app.github.dev/"
         >
             <img src={Icon} className={HomeCSS.botIcon}/>
 

@@ -32,6 +32,7 @@ import ShowBlogs from './dashboards/counsellor/ShowBlogs'
 import Settings from './dashboards/counsellor/Settings'
 import CounsellorChat from './dashboards/counsellor/CounsellorChat'
 
+import EntranceExams from './pages/EntranceExams'
 
 
 export default function App() {
@@ -51,6 +52,10 @@ export default function App() {
             <Route element={<AuthenticateUser />} >
               <Route path="careerGPT" element={<CareerGPT />} />
             </Route>
+            
+                
+                <Route path="/EntranceExams" element={<EntranceExams />} />
+            
 
             <Route path="login" element={<Login />} />  
             <Route path="signup" element={<Signup />} />
