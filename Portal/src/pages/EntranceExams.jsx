@@ -71,10 +71,10 @@ const EntranceExams = () => {
                     </li>
                     <li>
                         <strong>Programming:</strong>{' '}
-                        <a href="https://www.oracle.com/certifications/" target="_blank" rel="noopener noreferrer" aria-label="Oracle Certification">
+                        <a href="https://www.oracle.com/in/education/training/java/" target="_blank" rel="noopener noreferrer" aria-label="Oracle Certification">
                             Oracle Certified Java Programmer
                         </a>,{' '}
-                        <a href="https://www.microsoft.com/en-us/learn/certifications/" target="_blank" rel="noopener noreferrer" aria-label="Microsoft Certifications">
+                        <a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification" target="_blank" rel="noopener noreferrer" aria-label="Microsoft Certifications">
                             Microsoft Certified: Azure Developer Associate
                         </a>.
                     </li>

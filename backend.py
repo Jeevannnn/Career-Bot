@@ -32,6 +32,10 @@ def GenerateResponse(input_text):
 
     return response.text
 
+
+
+
+
 # while True:
 #     string = str(input("Enter your Prompt: "))
 #     print(GenerateResponse(string))
